@@ -33,7 +33,6 @@ const HeroSection = () => {
   return (
     <>
       <section className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-800 relative overflow-hidden">
-        {/* Background decorative elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
@@ -42,7 +41,6 @@ const HeroSection = () => {
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-16 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[calc(100vh-200px)]">
-            {/* Left Content */}
             <div className="text-white space-y-8">
               <div className="space-y-4">
                 <h1
@@ -85,7 +83,6 @@ const HeroSection = () => {
                 </p>
               </div>
 
-              {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 pt-4">
                 <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold rounded-2xl hover:from-blue-700 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-xl shadow-blue-500/25">
                   Explore Projects
@@ -96,10 +93,8 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Right Content - Enhanced Sliding Cards */}
             <div className="relative">
               <div className="relative h-[500px] flex items-center justify-center">
-                {/* Main Cards Container */}
                 <div className="relative w-full max-w-md">
                   <div className="flex items-center justify-center">
                     {slideImages.map((image, index) => {
@@ -149,10 +144,10 @@ const HeroSection = () => {
                               <div className="absolute bottom-6 left-6 right-6">
                                 <div className="text-white">
                                   <h4 className="font-semibold text-lg mb-2">
-                                    Project {index + 1}
+                                    {index + 1}
                                   </h4>
                                   <p className="text-sm text-slate-300">
-                                    Modern web development
+                                    Our memorable moments
                                   </p>
                                 </div>
                               </div>
@@ -164,9 +159,7 @@ const HeroSection = () => {
                   </div>
                 </div>
 
-                {/* Navigation Line and Buttons */}
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex items-center space-x-8">
-                  {/* Previous Button */}
                   <button
                     onClick={prevSlide}
                     className="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 border border-white/20 shadow-xl group"
@@ -186,7 +179,6 @@ const HeroSection = () => {
                     </svg>
                   </button>
 
-                  {/* Progress Line */}
                   <div className="flex items-center space-x-3">
                     <div className="w-32 h-0.5 bg-white/20 rounded-full overflow-hidden">
                       <div
@@ -202,7 +194,6 @@ const HeroSection = () => {
                     </span>
                   </div>
 
-                  {/* Next Button */}
                   <button
                     onClick={nextSlide}
                     className="w-14 h-14 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 border border-white/20 shadow-xl group"
@@ -224,7 +215,6 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Slide Indicators */}
               <div className="flex justify-center space-x-3 mt-12">
                 {[...Array(totalSlides)].map((_, index) => (
                   <button
@@ -242,7 +232,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Floating Elements */}
         <div className="absolute top-32 right-20 w-4 h-4 bg-blue-400/60 rounded-full animate-pulse"></div>
         <div className="absolute bottom-40 left-20 w-6 h-6 bg-cyan-400/40 rounded-full animate-bounce"></div>
         <div className="absolute top-1/2 right-32 w-2 h-2 bg-white/40 rounded-full animate-ping"></div>
